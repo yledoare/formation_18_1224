@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="menu_estate_property_root"
+        name="Estate Management">
+        <menuitem 
+            id="menu_estate_property"
+            name="Properties"
+            action="action_estate_property"
+        />
+        <menuitem
+            id="configuration"
+            name="Configuration"        
+        >
+        <menuitem 
+            id="estate_property_tag_menu" 
+            name="Property Tags" 
+            action="estate_property_tag_action"
+            />
+        </menuitem>
+    </menuitem>   
+
+</odoo>
