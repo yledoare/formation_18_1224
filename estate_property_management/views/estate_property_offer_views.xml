@@ -8,6 +8,7 @@
           <sheet>
             <group>
                 <field name="property_id"/>
+                <field name="city_of_property"/>
                 <field name="seller_id"/>
                 <field name="buyer_id"/>
                 <field 
@@ -15,7 +16,8 @@
                     widget="monetary"
                     />
                 <field name="currency_id" />
-                <field name="date_of_validity"/>
+                <field name="offer_date" />
+                <field name="validity_date"/>
             </group>
           </sheet>
         </form>
@@ -35,7 +37,8 @@
             widget="monetary"
             />
             <field name="currency_id" />
-            <field name="date_of_validity"/>
+            <field name="offer_date" />
+            <field name="validity_date"/>
         </list>
       </field>
     </record>

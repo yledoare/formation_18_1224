@@ -30,6 +30,7 @@ Long description of module's purpose
         'views/estate_property_tag_views.xml',
         'views/res_partner_views.xml',
         'views/estate_property_offer_views.xml',
+        'views/estate_property_offer_state_views.xml',
         'views/menu.xml',
     ],
 

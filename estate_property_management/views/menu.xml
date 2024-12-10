@@ -26,6 +26,11 @@
             name="Property Tags" 
             action="estate_property_tag_action"
             />
+        <menuitem 
+            id="estate_property_offer_state_menu" 
+            name="Offer State" 
+            action="action_estate_property_offer_state"
+            />
         </menuitem>
     </menuitem>   
 
