@@ -14,7 +14,7 @@ class EstatePropertyTag(models.Model):
     parent_id = fields.Many2one('estate.property.tag', string='Parent Tag', index=True)
     child_ids = fields.One2many('estate.property.tag', 'parent_id', string='Child Tags')
     color = fields.Integer(string='Color', default=_get_default_color, aggregator=False)
-
+    parent_path = fields.Char(index=True)
 
     @api.constrains('parent_id')
     def _check_parent_id(self):
