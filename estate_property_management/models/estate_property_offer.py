@@ -15,6 +15,7 @@ class EstatePropertyOffer(models.Model):
         string='Name',
         compute='_compute_display_name'
     )
+    name = fields.Char('Name')
     property_id = fields.Many2one(
         'estate.property',
         string='Property',
@@ -48,6 +49,10 @@ class EstatePropertyOffer(models.Model):
         'estate.property.offer.state',
         string='State'
     )
+    is_sale = fields.Boolean(
+        string='Is Sale',
+        related='offer_state_id.is_sale'
+    )
 
     @api.depends('offer_date')
     def _compute_validity_date(self):
@@ -62,3 +67,19 @@ class EstatePropertyOffer(models.Model):
                 record.display_name = record.property_id.name + ' - ' + record.buyer_id.name
             else:
                 record.display_name = 'SUPER OFFRE POUR' + ' - ' + record.property_id.name
+    
+    def write(self, vals):
+        if 'offer_state_id' in vals:
+            offer_state_id = self.env['estate.property.offer.state'].browse(vals['offer_state_id'])
+            if offer_state_id.is_sale:
+                for record in self:
+                    vals['name'] = 'OFFRE ACCEPTÉ' + record.property_id.name
+                    record.property_id.is_sold = True
+        return super(EstatePropertyOffer, self).write(vals)
+
+    # def write(self, vals):
+    #     res = super(EstatePropertyOffer, self).write(vals)        
+    #     for record in self:
+    #         if record.is_sale:
+    #             record.property_id.is_sold = True
+    #     return res

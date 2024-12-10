@@ -27,3 +27,4 @@ class EstateProperty(models.Model):
         ('office', 'Office'),
     ], string='type')
     tags_ids = fields.Many2many('estate.property.tag', string='Tags')
+    is_sold = fields.Boolean('Is Sold')

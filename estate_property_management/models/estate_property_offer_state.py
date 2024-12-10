@@ -9,3 +9,4 @@ class EstatePropertyOfferState(models.Model):
 
 
     name = fields.Char('name')
+    is_sale = fields.Boolean('Is Sale')
