@@ -2,6 +2,7 @@
 
 from datetime import timedelta
 from odoo import models, fields, api
+from odoo.exceptions import ValidationError
 
 
 class EstatePropertyOffer(models.Model):
@@ -69,6 +70,18 @@ class EstatePropertyOffer(models.Model):
                 record.display_name = 'OFFRE SANS BIEN'
             else:
                 record.display_name = 'SUPER OFFRE POUR' + ' - ' + record.property_id.name
+    
+    @api.constrains('amount', 'property_id', 'buyer_id')
+    def _check_double_offer(self):
+        for offer in self:
+            existing_offer = self.search([
+                ('property_id', '=', offer.property_id.id),
+                ('buyer_id', '=', offer.buyer_id.id),
+                ('amount', '=', offer.amount),
+                ('id', '!=', offer.id)
+            ])
+            if existing_offer:
+                raise ValidationError('You cannot make the same offer twice')
     
     def write(self, vals):
         if 'offer_state_id' in vals:

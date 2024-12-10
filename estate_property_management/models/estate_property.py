@@ -6,6 +6,9 @@ from odoo import models, fields, api
 class EstateProperty(models.Model):
     _name = 'estate.property'
     _description = 'Property'
+    _sql_constraints = [
+        ('unique_name', 'UNIQUE(name) ', 'The name of the property must be unique')
+    ]
 
     name = fields.Char(string='Name', required=True)
     description = fields.Text(
@@ -28,3 +31,4 @@ class EstateProperty(models.Model):
     ], string='type')
     tags_ids = fields.Many2many('estate.property.tag', string='Tags')
     is_sold = fields.Boolean('Is Sold')
+    
