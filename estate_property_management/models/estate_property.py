@@ -9,7 +9,8 @@ class EstateProperty(models.Model):
 
     name = fields.Char(string='Name', required=True)
     description = fields.Text(
-        string='Description'
+        string='Description',
+        translate=True,
     )
     owner_id = fields.Many2one(
         'res.partner',
