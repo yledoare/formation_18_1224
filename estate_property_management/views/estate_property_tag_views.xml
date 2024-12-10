@@ -22,7 +22,7 @@
             <list string="Property Tags">
                 <field name="name"/>
                 <field name="parent_id"/>
-                <field name="color"/>
+                <field name="color" widget="color_picker"/>
             </list>
         </field>
     </record>
