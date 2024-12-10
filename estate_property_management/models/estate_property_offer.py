@@ -65,6 +65,8 @@ class EstatePropertyOffer(models.Model):
         for record in self:
             if record.buyer_id and record.property_id:
                 record.display_name = record.property_id.name + ' - ' + record.buyer_id.name
+            elif not record.property_id or not record.property_id.name:
+                record.display_name = 'OFFRE SANS BIEN'
             else:
                 record.display_name = 'SUPER OFFRE POUR' + ' - ' + record.property_id.name
     
