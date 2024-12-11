@@ -17,12 +17,11 @@
         </field>
     </record>
 
-    <record id="action_mass_tag_wizard" model="ir.actions.act_window">
-        <field name="name">Mass tag Wizard</field>
-        <field name="res_model">estate.property.mass.tag</field>
+    <record id="action_mass_offer_wizard" model="ir.actions.act_window">
+        <field name="name">Mass Offer Wizard</field>
+        <field name="res_model">estate.property.mass.offer</field>
         <field name="view_mode">form</field>
         <field name="target">new</field>
-        <field name="binding_model_id" ref="estate_property_management.model_estate_property_tag"/>
-        <field name="binding_view_types">list,form</field>
+        <field name="binding_model_id" ref="estate_property_management.model_estate_property"/>
     </record>
 </odoo>
