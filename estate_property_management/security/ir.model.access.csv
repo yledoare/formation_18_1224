@@ -8,3 +8,4 @@ access_estate_property_offer_state,Access State For Offer,model_estate_property_
 access_mass_offer,Mass Offer,model_estate_property_mass_offer,base.group_system,1,1,1,1
 access_mass_tag,Mass Tag,model_estate_property_mass_tag,base.group_system,1,1,1,1
 
+access_estate_location,Access Estate Location,model_estate_location,base.group_user,1,1,1,1

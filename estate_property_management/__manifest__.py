@@ -35,6 +35,7 @@ Long description of module's purpose
         'views/res_partner_views.xml',
         'views/estate_property_offer_views.xml',
         'views/estate_property_offer_state_views.xml',
+        'views/estate_location.xml',
         # WIZARD
         'wizard/mass_offer_views.xml',
         'wizard/estate_property_mass_tag_views.xml',

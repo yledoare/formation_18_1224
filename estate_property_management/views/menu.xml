@@ -11,10 +11,16 @@
             sequence="1"
         />
         <menuitem 
+            id="menu_estate_location"
+            name="Locations"
+            action="action_estate_location"
+            sequence="2"
+        />
+        <menuitem 
             id="menu_estate_property_offer"
             name="Offers"
             action="action_estate_property_offer"
-            sequence="2"
+            sequence="3"
         />
         <menuitem
             id="configuration"
