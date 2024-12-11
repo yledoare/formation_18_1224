@@ -22,6 +22,9 @@
                         <field name="bailleur_id"/>
                         <field name="seller_id"/>
                         <field name="amount"/>
+                        <field name="commission"/>
+                        <field name="amount_commission"/>
+                        <field name="amount_net"/>
                     </group>
                     <notebook>
                         <page string="Description">

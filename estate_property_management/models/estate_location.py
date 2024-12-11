@@ -5,7 +5,12 @@ from odoo import models, fields, api
 
 class EstateLocation(models.Model):
     _name = 'estate.location'
-    _inherit = ['mail.thread', 'mail.activity.mixin', 'image.mixin']
+    _inherit = [
+        'mail.thread',
+        'mail.activity.mixin',
+        'image.mixin',
+        'estate.commission.mixin'
+    ]
     _description = 'Contract Location'
 
     name = fields.Char('Name')
@@ -15,7 +20,8 @@ class EstateLocation(models.Model):
     bailleur_id = fields.Many2one('res.partner', string='Bailleur')
     seller_id = fields.Many2one('res.users', string='Seller')
     amount = fields.Float('Amount')
-
+    amount_commission = fields.Float('Amount Commission')
+    amount_net = fields.Float('Amount Net')
 
     @api.onchange('property_id')
     def _onchange_property_id(self):
@@ -26,6 +32,9 @@ class EstateLocation(models.Model):
     def rainbow(self):
         self.ensure_one()
         self.description = self.description + '🌈'
+        marge, amount_commisison = self.get_commission_marge(amount=self.amount)
+        self.amount_commission = amount_commisison
+        self.amount_net = marge
         return {
             'effect': {
                 'fadeout': 'slow',

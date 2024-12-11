@@ -8,6 +8,7 @@ from odoo.exceptions import ValidationError
 class EstatePropertyOffer(models.Model):
     _name = 'estate.property.offer'
     _description = 'Offer for Property'
+    _inherit = ['estate.commission.mixin']
     _sql_constraints = [
         ('check_amount', 'CHECK(amount > 0)', 'The amount must be strictly positive')
     ]
