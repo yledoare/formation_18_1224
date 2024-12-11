@@ -2,7 +2,7 @@
 <odoo>
     <data>
         <!-- QWeb Reports -->
-        <record id="account_invoices" model="ir.actions.report">
+        <record id="estate_location" model="ir.actions.report">
             <field name="name">Estate Location</field>
             <field name="model">estate.location</field>
             <field name="report_type">qweb-pdf</field>

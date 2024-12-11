@@ -44,6 +44,8 @@ Long description of module's purpose
         #REPORT
         'report/estate_location_report.xml',
         'report/estate_location_report_template.xml',
+        'report/estate_report_offer.xml',
+        'report/estate_report_offer_template.xml',
         # MENU
         'views/menu.xml',
     ],
