@@ -28,6 +28,8 @@ Long description of module's purpose
         # DATA
         'data/estate_property_offer_state.xml',
         # SECURITY
+        'security/res_groups.xml',
+        'security/ir_rule.xml',
         'security/ir.model.access.csv',
         # VIEWS
         'views/estate_property_views.xml',
