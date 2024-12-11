@@ -25,13 +25,19 @@ Long description of module's purpose
 
     # always loaded
     'data': [
+        # DATA
         'data/estate_property_offer_state.xml',
+        # SECURITY
         'security/ir.model.access.csv',
+        # VIEWS
         'views/estate_property_views.xml',
         'views/estate_property_tag_views.xml',
         'views/res_partner_views.xml',
         'views/estate_property_offer_views.xml',
         'views/estate_property_offer_state_views.xml',
+        # WIZARD
+        'wizard/mass_offer_views.xml',
+        # MENU
         'views/menu.xml',
     ],
 

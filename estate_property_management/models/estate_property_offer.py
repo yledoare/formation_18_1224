@@ -82,6 +82,16 @@ class EstatePropertyOffer(models.Model):
             ])
             if existing_offer:
                 raise ValidationError('You cannot make the same offer twice')
+
+    # PAS BESOIN DE DÉFINIR LES CREATE ILS SONT PAR DÉFAUT, MAIS IL EST POSSIBLE DE SURCHARGER POUR APPLIQUER UNE LOGIQUE MÉTIER      
+    # @api.model
+    # def create(self, vals):
+    #     import pdb; pdb.set_trace()
+    
+    # @api.model_create_multi
+    # def create(self, vals_list):
+    #     import pdb; pdb.set_trace()
+        
     
     def write(self, vals):
         if 'offer_state_id' in vals:

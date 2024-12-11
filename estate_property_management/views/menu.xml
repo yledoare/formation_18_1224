@@ -31,6 +31,11 @@
             name="Offer State" 
             action="action_estate_property_offer_state"
             />
+        <menuitem 
+            id="estate_property_mass_offer_menu" 
+            name="Mass Offer" 
+            action="action_mass_offer_wizard"
+            />
         </menuitem>
     </menuitem>   
 
