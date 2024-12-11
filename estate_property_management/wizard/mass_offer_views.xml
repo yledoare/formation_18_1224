@@ -17,7 +17,7 @@
         </field>
     </record>
 
-    <record id="action_mass_offer_wizard" model="ir.actions.act_window">
+    <record id="action_mass_tag_wizard" model="ir.actions.act_window">
         <field name="name">Mass tag Wizard</field>
         <field name="res_model">estate.property.mass.tag</field>
         <field name="view_mode">form</field>
