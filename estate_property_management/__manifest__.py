@@ -41,6 +41,9 @@ Long description of module's purpose
         # WIZARD
         'wizard/mass_offer_views.xml',
         'wizard/estate_property_mass_tag_views.xml',
+        #REPORT
+        'report/estate_location_report.xml',
+        'report/estate_location_report_template.xml',
         # MENU
         'views/menu.xml',
     ],
