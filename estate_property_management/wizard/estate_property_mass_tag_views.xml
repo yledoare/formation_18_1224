@@ -1,13 +1,12 @@
 <odoo>
-    <record id="view_mass_offer_wizard_form" model="ir.ui.view">
-        <field name="name">mass.offer.wizard.form</field>
-        <field name="model">estate.property.mass.offer</field>
+    <record id="view_estate_property_mass_tag_wizard_form" model="ir.ui.view">
+        <field name="name">estate.property.mass.tag.wizard.form</field>
+        <field name="model">estate.property.mass.tag</field>
         <field name="arch" type="xml">
-            <form string="Mass Offer Wizard">
+            <form string="Mass Tag ">
                 <group>
-                    <field name="buyer_id"/>
+                    <field name="tags_ids"/>
                     <field name="property_ids" widget="many2many_tags"/>
-                    <field name="offer_amount"/>
                 </group>
                 <footer>
                     <button string="Apply" type="object" name="action_apply" class="btn-primary"/>
@@ -17,12 +16,12 @@
         </field>
     </record>
 
-    <record id="action_mass_offer_wizard" model="ir.actions.act_window">
-        <field name="name">Mass tag Wizard</field>
+    <record id="action_mass_tag_wizard" model="ir.actions.act_window">
+        <field name="name">Mass Tag</field>
         <field name="res_model">estate.property.mass.tag</field>
         <field name="view_mode">form</field>
         <field name="target">new</field>
-        <field name="binding_model_id" ref="estate_property_management.model_estate_property_tag"/>
+        <field name="binding_model_id" ref="estate_property_management.model_estate_property"/>
         <field name="binding_view_types">list,form</field>
     </record>
-</odoo>
+</odoo> 

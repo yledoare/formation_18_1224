@@ -6,3 +6,5 @@ access_estate_property_offer,Access For Offer Property,model_estate_property_off
 access_estate_property_offer_state,Access State For Offer,model_estate_property_offer_state,base.group_user,1,1,1,1
 
 access_mass_offer,Mass Offer,model_estate_property_mass_offer,base.group_system,1,1,1,1
+access_mass_tag,Mass Tag,model_estate_property_mass_tag,base.group_system,1,1,1,1
+
