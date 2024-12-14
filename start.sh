@@ -1,3 +1,11 @@
+docker ps |grep docker-db-1 
+
+if [ $? = 1 ]
+then
+	cd docker
+	docker-compose up -d
+fi
+
 [ ! -e venv ] && python3 -m venv venv
 . venv/bin/activate
 [ ! -e odoo ] && git clone --depth 1 -b 17.0 https://github.com/odoo/odoo 
