@@ -1,8 +1,8 @@
 diff --git a/requirements.txt b/requirements.txt
-index e1711f29..712b7552 100644
+index ec928f14..16b21af0 100644
 --- a/requirements.txt
 +++ b/requirements.txt
-@@ -17,9 +17,6 @@ docutils==0.20.1 ; python_version >= '3.11'
+@@ -14,9 +14,6 @@ ebaysdk==2.1.5
  freezegun==1.1.0 ; python_version < '3.11'  # (Jammy)
  freezegun==1.2.1 ; python_version >= '3.11'
  geoip2==2.9.0
@@ -12,17 +12,17 @@ index e1711f29..712b7552 100644
  greenlet==1.1.2 ; sys_platform != 'win32' and python_version == '3.10'  # (Jammy)
  greenlet==2.0.2 ; sys_platform != 'win32' and python_version > '3.10' and python_version < '3.12'
  greenlet==3.0.3 ; sys_platform != 'win32' and python_version >= '3.12'  # (Noble)
-@@ -49,9 +46,6 @@ polib==1.1.1
+@@ -44,9 +41,6 @@ polib==1.1.1
  psutil==5.9.0 ; python_version <= '3.10' 
  psutil==5.9.4 ; python_version > '3.10' and python_version < '3.12' 
  psutil==5.9.8 ; python_version >= '3.12' # (Noble) Mostly to have a wheel package
 -psycopg2==2.9.2 ; python_version == '3.10' # (Jammy)
 -psycopg2==2.9.5 ; python_version == '3.11'
 -psycopg2==2.9.9 ; python_version >= '3.12' # (Noble) Mostly to have a wheel package
+ pydot==1.4.2
  pyopenssl==21.0.0 ; python_version < '3.12'
  pyopenssl==24.1.0 ; python_version >= '3.12' # (Noble) min 23.2.0, pinned for compatibility with cryptography==42.0.8 and security patches
- PyPDF2==1.26.0 ; python_version <= '3.10'
-@@ -60,8 +54,6 @@ pypiwin32 ; sys_platform == 'win32'
+@@ -56,8 +50,6 @@ pypiwin32 ; sys_platform == 'win32'
  pyserial==3.5
  python-dateutil==2.8.1 ; python_version < '3.11'
  python-dateutil==2.8.2 ; python_version >= '3.11'
