@@ -45,14 +45,14 @@
       <field name="name">estate.location.list</field>
       <field name="model">estate.location</field>
       <field name="arch" type="xml">
-        <list string="Estate Location">
+        <tree string="Estate Location">
             <field name="name"/>
             <field name="property_id"/>
             <field name="customer_id"/>
             <field name="bailleur_id"/>
             <field name="seller_id"/>
             <field name="amount"/>
-        </list>
+        </tree>
       </field>
     </record>
 

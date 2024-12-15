@@ -19,9 +19,9 @@
       <field name="name">estate.property.offer.state.list</field>
       <field name="model">estate.property.offer.state</field>
       <field name="arch" type="xml">
-        <list string="Estate Property List">
+        <tree string="Estate Property List">
           <field name="name"/>
-        </list>
+        </tree>
       </field>
     </record>
 

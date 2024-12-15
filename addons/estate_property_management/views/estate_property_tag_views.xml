@@ -19,11 +19,11 @@
         <field name="name">estate.property.tag.list</field>
         <field name="model">estate.property.tag</field>
         <field name="arch" type="xml">
-            <list string="Property Tags">
+            <tree string="Property Tags">
                 <field name="name"/>
                 <field name="parent_id"/>
                 <field name="color" widget="color_picker"/>
-            </list>
+            </tree>
         </field>
     </record>
 
