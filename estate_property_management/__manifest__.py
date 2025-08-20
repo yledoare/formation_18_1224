@@ -26,7 +26,7 @@ Long description of module's purpose
     # always loaded
     'data': [
         # DATA
-        'data/estate_property_offer_state.xml',
+        #'data/estate_property_offer_state.xml',
         # SECURITY
         'security/res_groups.xml',
         'security/ir_rule.xml',
@@ -35,17 +35,17 @@ Long description of module's purpose
         'views/estate_property_views.xml',
         'views/estate_property_tag_views.xml',
         'views/res_partner_views.xml',
-        'views/estate_property_offer_views.xml',
-        'views/estate_property_offer_state_views.xml',
+        #'views/estate_offer_views.xml',
+        #'views/estate_offer_state_views.xml',
         'views/estate_location.xml',
         # WIZARD
-        'wizard/mass_offer_views.xml',
+        #'wizard/mass_offer_views.xml',
         'wizard/estate_property_mass_tag_views.xml',
         #REPORT
         'report/estate_location_report.xml',
         'report/estate_location_report_template.xml',
-        'report/estate_report_offer.xml',
-        'report/estate_report_offer_template.xml',
+        #'report/estate_offer_report.xml',
+        #'report/estate_offer_report_template.xml',
         # MENU
         'views/menu.xml',
     ],

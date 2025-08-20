@@ -8,16 +8,8 @@
                         <h2>Estate Offer</h2>
                         <p><strong>Nom de l'offre:</strong> <span t-field="doc.name"/></p>
                         <p><strong>Nom du bien:</strong> <span t-field="doc.property_id"/></p>
-                        <p><strong>Ville:</strong> <span t-field="doc.city_of_property"/></p>
+                        <p><strong>Ville:</strong> <span t-field="doc.property_id.city"/></p> 
                         <p><strong>Rue:</strong> <span t-field="doc.property_id.street"/></p>
-
-                        <table>
-                            <t t-foreach="doc.tags_ids" t-as="tag">
-                                <tr>
-                                    <td><span t-field="tag.name"/></td>
-                                </tr>
-                            </t>
-                        </table>
                     </div>
                 </t>
             </t>

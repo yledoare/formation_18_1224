@@ -5,7 +5,7 @@ from odoo import models, fields, api
 from odoo.exceptions import ValidationError
 
 
-class EstatePropertyOffer(models.Model):
+class EstateOffer(models.Model):
     _name = 'estate.property.offer'
     _description = 'Offer for Property'
     _inherit = ['estate.commission.mixin']
@@ -101,7 +101,7 @@ class EstatePropertyOffer(models.Model):
                 for record in self:
                     vals['name'] = 'OFFRE ACCEPTÉ' + record.property_id.name
                     record.property_id.is_sold = True
-        return super(EstatePropertyOffer, self).write(vals)
+        return super(EstateOffer, self).write(vals)
 
     # def write(self, vals):
     #     res = super(EstatePropertyOffer, self).write(vals)        

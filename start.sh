@@ -2,7 +2,8 @@ docker ps |grep docker-db-1
 if [ $? = 1 ]
 then
        cd docker
-       docker-compose up -d
+       docker-compose up -d || docker compose up -d
+       cd ..
 fi
 
 [ ! -e venv ] && python3 -m venv venv

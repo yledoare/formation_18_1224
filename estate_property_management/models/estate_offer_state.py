@@ -3,8 +3,8 @@
 from odoo import models, fields
 
 
-class EstatePropertyOfferState(models.Model):
-    _name = 'estate.property.offer.state'
+class EstateOfferState(models.Model):
+    _name = 'estate.offer.state'
     _description = 'State For Offer'
 
 

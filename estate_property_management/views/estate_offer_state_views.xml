@@ -1,8 +1,8 @@
 <odoo>
   <data>
-    <record id="view_estate_property_offer_state_form" model="ir.ui.view">
-      <field name="name">estate.property.offer.state.form</field>
-      <field name="model">estate.property.offer.state</field>
+    <record id="view_estate_offer_state_form" model="ir.ui.view">
+      <field name="name">estate.offer.state.form</field>
+      <field name="model">estate.offer.state</field>
       <field name="arch" type="xml">
         <form string="Estate Property Offer">
           <sheet>
@@ -15,9 +15,9 @@
       </field>
     </record>
 
-    <record id="view_estate_property_offer_state_list" model="ir.ui.view">
-      <field name="name">estate.property.offer.state.list</field>
-      <field name="model">estate.property.offer.state</field>
+    <record id="view_estate_offer_state_list" model="ir.ui.view">
+      <field name="name">estate.offer.state.list</field>
+      <field name="model">estate.offer.state</field>
       <field name="arch" type="xml">
         <list string="Estate Property List">
           <field name="name"/>
@@ -25,9 +25,9 @@
       </field>
     </record>
 
-    <record id="action_estate_property_offer_state" model="ir.actions.act_window">
+    <record id="action_estate_offer_state" model="ir.actions.act_window">
       <field name="name">Estate Property Offer State</field>
-      <field name="res_model">estate.property.offer.state</field>
+      <field name="res_model">estate.offer.state</field>
       <field name="view_mode">list,form</field>
     </record>
 
