@@ -44,6 +44,8 @@ Long description of module's purpose
         #REPORT
         'report/estate_location_report.xml',
         'report/estate_location_report_template.xml',
+        'report/estate_property_report.xml',
+        'report/estate_property_report_template.xml',
         #'report/estate_offer_report.xml',
         #'report/estate_offer_report_template.xml',
         # MENU
