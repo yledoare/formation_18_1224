@@ -16,12 +16,6 @@
             action="action_estate_location"
             sequence="2"
         />
-        <menuitem 
-            id="menu_estate_property_offer"
-            name="Offers"
-            action="action_estate_property_offer"
-            sequence="3"
-        />
         <menuitem
             id="configuration"
             name="Configuration"
@@ -31,16 +25,6 @@
             id="estate_property_tag_menu" 
             name="Property Tags" 
             action="estate_property_tag_action"
-            />
-        <menuitem 
-            id="estate_property_offer_state_menu" 
-            name="Offer State" 
-            action="action_estate_property_offer_state"
-            />
-        <menuitem 
-            id="estate_property_mass_offer_menu" 
-            name="Mass Offer" 
-            action="action_mass_offer_wizard"
             />
         </menuitem>
     </menuitem>   
