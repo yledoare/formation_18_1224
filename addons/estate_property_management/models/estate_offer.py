@@ -6,7 +6,7 @@ from odoo.exceptions import ValidationError
 
 
 class EstateOffer(models.Model):
-    _name = 'estate.property.offer'
+    _name = 'estate.offer'
     _description = 'Offer for Property'
     _inherit = ['estate.commission.mixin']
     _sql_constraints = [
@@ -48,7 +48,7 @@ class EstateOffer(models.Model):
         store=True,
     )
     offer_state_id = fields.Many2one(
-        'estate.property.offer.state',
+        'estate.offer.state',
         string='State'
     )
     is_sale = fields.Boolean(
@@ -96,7 +96,7 @@ class EstateOffer(models.Model):
     
     def write(self, vals):
         if 'offer_state_id' in vals:
-            offer_state_id = self.env['estate.property.offer.state'].browse(vals['offer_state_id'])
+            offer_state_id = self.env['estate.offer.state'].browse(vals['offer_state_id'])
             if offer_state_id.is_sale:
                 for record in self:
                     vals['name'] = 'OFFRE ACCEPTÉ' + record.property_id.name
