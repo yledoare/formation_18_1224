@@ -7,6 +7,7 @@
                     <div class="page">
                         <h2>Estate Property Report</h2>
                         <p><strong>Name:</strong> <span t-field="doc.name"/></p>
+			<span t-field="doc.image" t-options='{"widget": "image"}'/>
                     </div>
                 </t>
             </t>

@@ -31,4 +31,6 @@ class EstateProperty(models.Model):
     ], string='type')
     tags_ids = fields.Many2many('estate.property.tag', string='Tags')
     is_sold = fields.Boolean('Is Sold')
-    
+    image = fields.Binary(
+        attachment=True, help="This field holds the photo of the property."
+    )    
