@@ -55,7 +55,7 @@
         </list>
       </field>
     </record>
-
+    
     <record id="action_estate_location" model="ir.actions.act_window">
       <field name="name">Estate Location</field>
       <field name="res_model">estate.location</field>

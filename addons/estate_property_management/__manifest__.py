@@ -50,6 +50,7 @@ Long description of module's purpose
         #'report/estate_offer_report_template.xml',
         # MENU
         'views/menu.xml',
+        'views/actions.xml',
     ],
 
 }

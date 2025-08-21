@@ -2,6 +2,11 @@
 
 from odoo import models, fields, api
 
+def action_send_mail(self):
+#   template = self.env.ref(“module_name.email_template_name”)
+#   email_values = {'email_from': self.env.user.email}
+#   template.send_mail(self.id, force_send=True, email_values=email_values)
+    print("OK")
 
 class EstateProperty(models.Model):
     _name = 'estate.property'

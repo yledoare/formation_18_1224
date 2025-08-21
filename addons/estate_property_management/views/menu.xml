@@ -6,21 +6,32 @@
         name="Estate Management">
         <menuitem 
             id="menu_estate_property"
-            name="Properties"
+            name="Properties2"
             action="action_estate_property"
             sequence="1"
         />
         <menuitem 
             id="menu_estate_location"
-            name="Locations"
+            name="Locations2"
             action="action_estate_location"
             sequence="2"
+        />
+        <menuitem 
+            id="menu_estate_offer"
+            name="Offers"
+            action="action_estate_offer"
+            sequence="4"
         />
         <menuitem
             id="configuration"
             name="Configuration"
-            sequence="3"
+            sequence="5"
         >
+        <menuitem 
+            id="menu_estate_sendmail"
+            name="sendmail"
+            action="action_estate_mail"
+        />
         <menuitem 
             id="estate_property_tag_menu" 
             name="Property Tags" 
