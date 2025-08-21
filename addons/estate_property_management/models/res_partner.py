@@ -12,5 +12,5 @@ class ResPartner(models.Model):
 
     def _compute_offer_count(self):
         for partner in self:
-            partner.offer_count = self.env['estate.property.offer'].search_count([('buyer_id', '=', partner.id)])
+            partner.offer_count = self.env['estate.offer'].search_count([('buyer_id', '=', partner.id)])
     

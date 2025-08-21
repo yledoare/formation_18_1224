@@ -1,5 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_estate_property,Access For Estate Property,model_estate_property,base.group_user,1,1,1,1
+access_estate_property_offer,Access For Estate Property Offer,model_estate_offer,base.group_user,1,1,1,1
+access_estate_property_offer_state,Access For Estate Property Offer State,model_estate_offer_state,base.group_user,1,1,1,1
 access_estate_property_tag,Access For Estate Property Tag,model_estate_property_tag,base.group_user,1,1,1,1
 access_mass_tag,Mass Tag,model_estate_property_mass_tag,base.group_system,1,1,1,1
 access_estate_location,Access Estate Location,model_estate_location,base.group_user,1,1,1,1
